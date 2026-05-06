@@ -8,7 +8,7 @@
  * - Addition (target unit result)
  *
  * @author Aayusha Kuikel
- * @version 10.0
+ * @version 11.0
  */
 public class QuantityMeasurementApp {
 
@@ -29,8 +29,7 @@ public class QuantityMeasurementApp {
             Quantity<U> quantity,
             U targetUnit) {
 
-        double convertedValue = quantity.convertTo(targetUnit);
-        return new Quantity<>(convertedValue, targetUnit);
+        return quantity.convertTo(targetUnit);
     }
 
     /**
